@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: #0b1728;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.nav-btn, .primary-btn {
+    background: #0284c7;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 510px;
+    padding: 90px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+    background: linear-gradient(120deg, #07111f, #102b46);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #38bdf8;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(34px, 5vw, 55px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+h1 span {
+    color: #38bdf8;
+}
+
+.description {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.safe-note {
+    color: #94a3b8;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.security-card {
+    background: #14263c;
+    border: 1px solid #245078;
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+    min-width: 260px;
+}
+
+.shield {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.security-card p {
+    color: #94a3b8;
+    margin: 15px 0;
+}
+
+.status {
+    color: #4ade80;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #4ade80;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.features, .checker, .about {
+    padding: 75px 7%;
+    text-align: center;
+}
+
+.features h2, .checker h2, .about h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: #112238;
+    border: 1px solid #263e59;
+    border-radius: 14px;
+    padding: 28px 20px;
+    text-align: left;
+}
+
+.feature-card h3 {
+    margin: 15px 0;
+    color: #38bdf8;
+}
+
+.feature-card p, .about p, .checker p {
+    color: #b7c6d8;
+    line-height: 1.7;
+}
+
+.feature-icon {
+    font-size: 35px;
+}
+
+.checker {
+    background: #10243a;
+}
+
+.about {
+    max-width: 100%;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background: #030a13;
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    line-height: 2;
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .security-card {
+        width: 100%;
+    }
+}
